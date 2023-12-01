@@ -126,7 +126,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./background.jpg */ \"./src/background.jpg\");\n\n\n\nconsole.log('test');\n\n//# sourceURL=webpack://restaurant-package/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./background.jpg */ \"./src/background.jpg\");\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n\n\n\n\n(0,_page_load__WEBPACK_IMPORTED_MODULE_2__.pageLoad)();\n\n//# sourceURL=webpack://restaurant-package/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/page-load.js":
+/*!**************************!*\
+  !*** ./src/page-load.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   pageLoad: () => (/* binding */ pageLoad)\n/* harmony export */ });\nfunction pageLoad () {\n    const contentDiv = document.getElementById(\"content\");\n\n    // header\n    const header = document.createElement('div');\n    header.classList.add('header');\n    contentDiv.appendChild(header);\n\n    const tabList = document.createElement('ul');\n    tabList.classList.add('tabs');\n\n    const homeTab = document.createElement('li');\n    homeTab.textContent = 'Home';\n    homeTab.classList.add('home-tab');\n    tabList.appendChild(homeTab);\n\n    const menuTab = document.createElement('li');\n    menuTab.textContent = 'Menu';\n    menuTab.classList.add('menu-tab');\n    tabList.appendChild(menuTab);\n\n    const aboutTab = document.createElement('li');\n    aboutTab.textContent = 'About';\n    aboutTab.classList.add('about-tab');\n    \n    tabList.appendChild(aboutTab);\n    header.appendChild(tabList)\n    \n\n\n    // main\n    const mainDiv = document.createElement('div');\n    mainDiv.classList.add('main');\n    contentDiv.appendChild(mainDiv);\n\n    // footer\n    const footerDiv = document.createElement('div')\n    footerDiv.classList.add('footer');\n    contentDiv.appendChild(footerDiv);\n\n    const author = document.createElement('p');\n    author.textContent = \"Site by Mark Subit\";\n    footerDiv.appendChild(author);\n\n    const imageCredit = document.createElement('a');\n    imageCredit.href = 'https://unsplash.com/@mitifotos';\n    imageCredit.textContent = 'Image by miti on Unsplash';\n\n    footerDiv.appendChild(imageCredit);\n\n\n}\n\n//# sourceURL=webpack://restaurant-package/./src/page-load.js?");
 
 /***/ }),
 
