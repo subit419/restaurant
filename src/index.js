@@ -1,4 +1,5 @@
 import './style.css';
 import background from './background.jpg';
+import { pageLoad } from './page-load';
 
-console.log('test');
+pageLoad();
