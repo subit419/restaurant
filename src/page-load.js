@@ -30,13 +30,24 @@ export function pageLoad () {
 
     // main
     const mainDiv = document.createElement('div');
-    const mainHeading = document.createElement('p');
+    const mainHeading = document.createElement('h1');
+    const mainPara = document.createElement('p');
+
+    const pageTitle = document.createElement('h1');
+    pageTitle.textContent = "Top-notch Bun";
+    pageTitle.classList.add('title');
+    mainDiv.appendChild(pageTitle);
+
+
     mainHeading.textContent = 'BREAD';
+    mainPara.textContent = 'Bread is a food consisting of flour or meal that is moistened, kneaded into dough, and often fermented using yeast, and it has been a major sustenance since prehistoric times.';
+    
     mainDiv.classList.add('main');
     contentDiv.appendChild(mainDiv);
 
-
+   
     mainDiv.appendChild(mainHeading);
+    mainDiv.appendChild(mainPara);
 
     
 

@@ -32,17 +32,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: beige;
+    height: 100%;
+}
+
+.main .title {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.main h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    width: 55vw;
+    color:bisque;
+}
+
+.main p {
+    font-family: 'Nunito Sans', sans-serif;
+    width: 55vw;
+    
+}
+
+hr {
+    width: 60%;
+    text-align: center;
+    margin: 24px auto;
+    border: 1px solid beige;
 }
 
 .footer {
     display:flex;
     border-top: 2px solid beige;
-    height: 10vh;
+    height: 5vh;
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
     gap: 20px;
     align-items: center;
     color: beige;
+    font-size: .8rem;
 }
 
 /* unvisited link */
@@ -73,4 +104,12 @@ a:link {
     font-size: 2em;
     color: beige;
     padding: 10px;
+    transition: all .1s ease-in-out;
+    display: inline-block;
+}
+
+.header li:hover {
+    transform: translateY(-5px);
+    text-decoration: underline;
+
 }
