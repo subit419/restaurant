@@ -3,6 +3,7 @@ import background from './background.jpg';
 import { pageLoad } from './page-load';
 import { homeTab } from './home-tab';
 import { menuTab } from './menu-tab';
+import { aboutTab } from './about-tab';
 
 pageLoad();
 
@@ -21,6 +22,8 @@ menuItems.forEach(item => {
             homeTab();
         } else if (e.target.className == 'menu-tab') {
             menuTab();
+        } else if (e.target.className == 'about-tab'){
+            aboutTab();
         }
     })
 });

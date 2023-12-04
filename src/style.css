@@ -113,3 +113,8 @@ a:link {
     text-decoration: underline;
 
 }
+
+table, th, td {
+    border:1px solid beige;
+    padding: 10px;
+}

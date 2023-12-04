@@ -8,6 +8,7 @@ module.exports = {
     pageload: './src/page-load.js',
     hometab: './src/home-tab.js',
     menutab: './src/menu-tab.js',
+    aboutTab: './src/about-tab.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
